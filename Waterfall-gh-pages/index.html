@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=no" />
+    <meta name="viewport" content="width=device-width,
+    maximum-scale=1, minimum-scale=1" />
+    <title>Waterfall Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    .footFix{width:100%;text-align:center;position:fixed;left:0;bottom:0;z-index:99;}
+    #footReturn, #footReturn2 {
+        z-index: 89;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        width: 100%;
+        outline: 0 none;
+        overflow: visible;
+        Unknown property name.-moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        height: 41px;
+        opacity: .95;
+        border-top: 1px solid #181818;
+        box-shadow: inset 0 1px 2px #b6b6b6;
+        background-color: #515151;
+        Invalid property value.background-image: -ms-linear-gradient(top,#838383,#202020);
+        background-image: -webkit-linear-gradient(top,#838383,#202020);
+        Invalid property value.background-image: -moz-linear-gradient(top,#838383,#202020);
+        Invalid property value.background-image: -o-linear-gradient(top,#838383,#202020);
+        background-image: -webkit-gradient(linear,0% 0,0% 100%,from(#838383),to(#202020));
+        Invalid property value.filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
+        Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
+    }
+    
+        </style>
+  </head>
+  
+  
+  <body>
+    <form action="" class="footFix" id="footReturn" method="post" enctype="multipart/form-data">
+        <input id="input1" type="file" name="file" />
+        <input id="input2" type="submit"/>
+    </form>
+    <div id="notice" class="off"></div>
+    <div id="cells"></div>
+    <div id="loader"><span>loading</span></div>
+    <div id="bigShow" style="position:fixed; top:0; left:0; display:none; z-index:999999; background:#000; width:100%;height:100%;" >
+        <img id="bigShowImg" src=""/>
+    </div>
+    <script type="text/template" id="template">
+      <p><a onclick="find(this)"><img src="img/{{src}}.jpg" height="{{height}}" width="{{width}}" /></a></p>
+      <h2 ><a href="#" class="des">{{title}}</a></h2>
+      <span class="like" name="uut">Like!</span>
+      <span class="mark" name="uut">Mark!</span>
+    </script>
+    
+    <script>var isGithubDemo = true;</script>
+    <script src="front.js/front.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
